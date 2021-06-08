@@ -34,10 +34,11 @@ export default {
 <style scoped>
 
 .header{
-  margin: 0 60px;
+  background-color: #B0FBFF;
 }
 
 .header__container {
+  margin: 0 60px;
   padding: 14px;
   display: flex;
   flex-direction: row;
@@ -56,5 +57,9 @@ export default {
 
 .header__item {
   margin: 0 16px;
+}
+
+.header__item-text {
+  color: var(--dark-color);
 }
 </style>

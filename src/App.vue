@@ -1,25 +1,31 @@
 <template>
   <Header />
+  <Hero />
+  <WhyUs />
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue';
+import Header from './components/Header.vue';
+import Hero from './components/Hero.vue';
+import WhyUs from './components/WhyUs.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Main
+    Hero,
+    WhyUs
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
  :root {
-  --primary-color: #047aed;
-  --secondary-color: #1c3fa8;
-  --dark-color: #002240;
+  --primary-color: #360E98;
+  --secondary-color: #01EFFB;
+  --dark-color: #18191F;
   --light-color: #f4f4f4;
 }
 
@@ -30,8 +36,16 @@ export default {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Arvo', serif;
   color: #333;
   line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--dark-color);
 }
 </style>
