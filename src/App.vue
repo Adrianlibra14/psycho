@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
  :root {
   --primary-color: #360E98;
@@ -36,7 +36,7 @@ export default {
 }
 
 body {
-  font-family: 'Arvo', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   line-height: 1.6;
 }
