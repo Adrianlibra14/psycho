@@ -58,7 +58,7 @@ export default {
 }
 
 .why-us__container {
-    margin: 90px;
+    padding: 90px;
 }
 
 .why-us__title {
