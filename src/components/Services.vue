@@ -1,5 +1,5 @@
 <template>
-  <div class="services">
+  <div class="services" id="services">
     <div class="services__container">
       <div class="services__title">
         <h2 class="services__title-text">Nuestros servicios</h2>
@@ -95,6 +95,11 @@ export default {
   border-radius: 24px;
   display: flex;
   flex-direction: column;
+  transition: all 0.2s ease-in;
+}
+
+.services__card:hover {
+  background-color:#b0fbff;
 }
 
 .services__img-container {

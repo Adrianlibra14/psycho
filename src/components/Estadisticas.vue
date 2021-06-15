@@ -1,5 +1,5 @@
 <template>
-    <div class="estadisticas">
+    <div class="estadisticas" id="estadisticas">
         <div class="estadisticas__container">
             <div class="estadisticas__title">
                 <h2 class="estadisticas__title-text">Algunas de nuestras estadísticas</h2>

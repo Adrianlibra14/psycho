@@ -1,5 +1,5 @@
 <template>
-  <div class="why-us">
+  <div class="why-us" id="why-us">
     <div class="why-us__container">
       <div class="why-us__title">
         <h2 class="why-us__title-text">Beneficios de trabajar con nosotros</h2>

@@ -6,19 +6,19 @@
       </div>
       <div class="header__elements">
         <nav class="header__item">
-          <h4 class="header__item-text">Beneficios</h4>
+          <a href="#why-us" class="header__item-link"><h4 class="header__item-text">Beneficios</h4></a> 
         </nav>
         <nav class="header__item">
-          <h4 class="header__item-text">Servicios</h4>
+          <a href="#services" class="header__item-link"><h4 class="header__item-text">Servicios</h4></a> 
         </nav>
         <nav class="header__item">
-          <h4 class="header__item-text">Estadísticas</h4>
+          <a href="#estadisticas" class="header__item-link"><h4 class="header__item-text">Estadísticas</h4></a> 
         </nav>
         <nav class="header__item">
-          <h4 class="header__item-text">Opiniones</h4>
+          <a href="#opiniones" class="header__item-link"><h4 class="header__item-text">Opiniones</h4></a> 
         </nav>
         <nav class="header__item">
-          <h4 class="header__item-text">Contacto</h4>
+          <a href="#contacto" class="header__item-link"><h4 class="header__item-text">Contacto</h4></a>
         </nav>
       </div>
     </div>
@@ -57,6 +57,10 @@ export default {
 
 .header__item {
   margin: 0 16px;
+}
+
+.header__item-link {
+  text-decoration: none;
 }
 
 .header__item-text {
