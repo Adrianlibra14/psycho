@@ -26,12 +26,17 @@ export default {
     };
   },
   mounted() {
-    document.onreadystatechange = setTimeout(() => {
-      if (document.readyState == "complete") {
-        this.isloaded = true;
-        document.body.style.overflow = "auto";
-      }
-    }, 3500);
+    this.$nextTick(function () {
+      // Code that will run only after the
+      // entire view has been rendered
+      document.onreadystatechange = setTimeout(() => {
+        if (document.readyState == "complete") {
+          this.isloaded = true;
+          document.body.style.overflow = "auto";
+          this.$emit("loaded", this.isloaded);
+        }
+      }, 3500);
+    });
   },
 };
 </script>

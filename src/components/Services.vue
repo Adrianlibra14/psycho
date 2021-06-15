@@ -4,53 +4,55 @@
       <div class="services__title">
         <h2 class="services__title-text">Nuestros servicios</h2>
       </div>
-      <div class="services__content">
-        <div class="services__card">
-          <div class="services__img-container">
-            <img
-              src="@/assets/mobile-application.png"
-              alt=""
-              class="services__card-img"
-            />
+      <div data-aos="fade-down" class="services__animation">
+        <div class="services__content">
+          <div class="services__card">
+            <div class="services__img-container">
+              <img
+                src="@/assets/mobile-application.png"
+                alt=""
+                class="services__card-img"
+              />
+            </div>
+            <div class="services__card-content">
+              <h2 class="services__card-title">Diseño gráfico</h2>
+              <p class="services__card-text">
+                Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et
+                sed nam sem tellus erat.
+              </p>
+            </div>
           </div>
-          <div class="services__card-content">
-            <h2 class="services__card-title">Diseño gráfico</h2>
-            <p class="services__card-text">
-              Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed
-              nam sem tellus erat.
-            </p>
+          <div class="services__card">
+            <div class="services__img-container">
+              <img
+                src="@/assets/web-application.png"
+                alt=""
+                class="services__card-img"
+              />
+            </div>
+            <div class="services__card-content">
+              <h2 class="services__card-title">Copywriter</h2>
+              <p class="services__card-text">
+                Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et
+                sed nam sem tellus erat.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="services__card">
-          <div class="services__img-container">
-            <img
-              src="@/assets/web-application.png"
-              alt=""
-              class="services__card-img"
-            />
-          </div>
-          <div class="services__card-content">
-            <h2 class="services__card-title">Copywriter</h2>
-            <p class="services__card-text">
-              Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed
-              nam sem tellus erat.
-            </p>
-          </div>
-        </div>
-        <div class="services__card">
-          <div class="services__img-container">
-            <img
-              src="@/assets/user-interface.png"
-              alt=""
-              class="services__card-img"
-            />
-          </div>
-          <div class="services__card-content">
-            <h2 class="services__card-title">Comunity manager</h2>
-            <p class="services__card-text">
-              Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed
-              nam sem tellus erat.
-            </p>
+          <div class="services__card">
+            <div class="services__img-container">
+              <img
+                src="@/assets/user-interface.png"
+                alt=""
+                class="services__card-img"
+              />
+            </div>
+            <div class="services__card-content">
+              <h2 class="services__card-title">Comunity manager</h2>
+              <p class="services__card-text">
+                Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et
+                sed nam sem tellus erat.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -84,9 +86,9 @@ export default {
 }
 
 .services__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 31px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 31px;
 }
 
 .services__card {
@@ -99,14 +101,14 @@ export default {
 }
 
 .services__card:hover {
-  background-color:#b0fbff;
+  background-color: #b0fbff;
 }
 
 .services__img-container {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .services__card-title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 </style>

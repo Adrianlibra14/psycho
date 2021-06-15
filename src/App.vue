@@ -1,13 +1,15 @@
 <template>
-  <PageLoader />
-  <Header />
-  <Hero />
-  <WhyUs />
-  <Services />
-  <Estadisticas />
-  <Opiniones />
-  <Contacto />
-  <Footer />
+  <PageLoader @loaded="loaded"/>
+  <div class="container" v-if="isloaded">
+    <Header />
+    <Hero />
+    <WhyUs />
+    <Services />
+    <Estadisticas />
+    <Opiniones />
+    <Contacto />
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -32,8 +34,18 @@ export default {
     Opiniones,
     Contacto,
     Footer,
-    PageLoader
+    PageLoader,
   },
+  data() {
+    return {
+      isloaded: false
+    };
+  },
+  methods: {
+    loaded(isloaded) {
+      this.isloaded = isloaded;
+    }
+  }
 };
 </script>
 

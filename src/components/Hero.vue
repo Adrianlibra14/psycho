@@ -2,18 +2,23 @@
   <div class="hero">
     <div class="hero__container">
       <div class="hero__content">
-        <h1 class="hero__title">Su expectativa es el límite</h1>
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in
-          et, lectus sit lorem id integer.
-        </p>
+        <div data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="500" class="hero__animation">
+          <h1 class="hero__title">Tu expectativa es el límite</h1>
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+            in et, lectus sit lorem id integer.
+          </p>
+        </div>
       </div>
+
       <div class="main__logo">
-        <img
-          src="@/assets/logo-psycho.png"
-          alt="Logo de psycho"
-          class="hero__img"
-        />
+        <div data-aos="fade-up" data-aos-easing="ease-in" data-aos-delay="500" class="hero__animation">
+          <img
+            src="@/assets/logo-psycho.png"
+            alt="Logo de psycho"
+            class="hero__img"
+          />
+        </div>
       </div>
     </div>
   </div>

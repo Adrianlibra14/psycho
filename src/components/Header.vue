@@ -2,23 +2,37 @@
   <header class="header">
     <div class="header__container">
       <div class="header__logo">
-        <img src="@/assets/logo-psycho.png" alt="Logo de psycho" class="header__img" />
+        <img
+          src="@/assets/logo-psycho.png"
+          alt="Logo de psycho"
+          class="header__img"
+        />
       </div>
       <div class="header__elements">
         <nav class="header__item">
-          <a href="#why-us" class="header__item-link"><h4 class="header__item-text">Beneficios</h4></a> 
+          <a href="#why-us" class="header__item-link"
+            ><h4 class="header__item-text">Beneficios</h4></a
+          >
         </nav>
         <nav class="header__item">
-          <a href="#services" class="header__item-link"><h4 class="header__item-text">Servicios</h4></a> 
+          <a href="#services" class="header__item-link"
+            ><h4 class="header__item-text">Servicios</h4></a
+          >
         </nav>
         <nav class="header__item">
-          <a href="#estadisticas" class="header__item-link"><h4 class="header__item-text">Estadísticas</h4></a> 
+          <a href="#estadisticas" class="header__item-link"
+            ><h4 class="header__item-text">Estadísticas</h4></a
+          >
         </nav>
         <nav class="header__item">
-          <a href="#opiniones" class="header__item-link"><h4 class="header__item-text">Opiniones</h4></a> 
+          <a href="#opiniones" class="header__item-link"
+            ><h4 class="header__item-text">Opiniones</h4></a
+          >
         </nav>
         <nav class="header__item">
-          <a href="#contacto" class="header__item-link"><h4 class="header__item-text">Contacto</h4></a>
+          <a href="#contacto" class="header__item-link"
+            ><h4 class="header__item-text">Contacto</h4></a
+          >
         </nav>
       </div>
     </div>
@@ -28,13 +42,26 @@
 <script>
 export default {
   name: "Header",
+  mounted() {
+    this.$nextTick(function () {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        });
+      });
+    });
+  },
 };
 </script>
 
 <style scoped>
-
-.header{
-  background-color: #B0FBFF;
+.header {
+  background-color: #b0fbff;
 }
 
 .header__container {
