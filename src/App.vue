@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 
 :root {
   --primary-color: #360e98;
@@ -78,6 +78,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 700;
   color: var(--primary-color);
 }
 
