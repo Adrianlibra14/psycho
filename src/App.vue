@@ -50,8 +50,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
   --primary-color: #360e98;
