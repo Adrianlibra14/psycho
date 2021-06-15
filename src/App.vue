@@ -67,7 +67,7 @@ export default {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #333;
   line-height: 1.6;
   overflow: hidden;
