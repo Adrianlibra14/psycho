@@ -1,19 +1,7 @@
 # psycho
 
-## Project setup
-```
-npm install
-```
+Test website created using Vue
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Screens below 1024px are not yet supported!!!
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Link to the project: https://hungry-mcnulty-d50c65.netlify.app
